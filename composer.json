@@ -1,0 +1,68 @@
+{
+    "name": "nullref/yii2-app",
+    "description": "Yii 2 Project Template",
+    "keywords": ["yii2", "framework", "project template"],
+    "type": "project",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+        "forum": "http://www.yiiframework.com/forum/",
+        "wiki": "http://www.yiiframework.com/wiki/",
+        "irc": "irc://irc.freenode.net/yii",
+        "source": "https://github.com/yiisoft/yii2"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.5.0",
+        "nullref/yii2-admin": ">=0.0.2",
+        "nullref/yii2-category": "dev-master",
+        "nullref/yii2-core": ">=0.0.3",
+        "nullref/yii2-eav": "dev-master",
+        "nullref/yii2-useful": ">=0.0.4",
+        "vlucas/phpdotenv": "~1.0@dev",
+        "voskobovich/yii2-linker-behavior": "dev-master",
+        "wbraganca/yii2-fancytree-widget": "dev-master",
+        "yiisoft/yii2": ">=2.0.13",
+        "yiisoft/yii2-bootstrap": "^2.0",
+        "yiisoft/yii2-swiftmailer": "^2.0"
+    },
+    "require-dev": {
+        "codeception/codeception": "^2.2",
+        "yiisoft/yii2-debug": "*",
+        "yiisoft/yii2-gii": "*",
+        "yiisoft/yii2-faker": "*"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "config": {
+        "process-timeout": 1800,
+        "sort-packages": true,
+        "fxp-asset": {
+            "enabled": false
+        }
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "yii\\composer\\Installer::postCreateProject",
+            "cp .env.example .env"
+        ]
+    },
+    "extra": {
+        "yii\\composer\\Installer::postCreateProject": {
+            "setPermission": [
+                {
+                    "runtime": "0777",
+                    "web/assets": "0777",
+                    "yii": "0755"
+                }
+            ],
+            "generateCookieValidationKey": [
+                "src/config/web.php"
+            ]
+        }
+    }
+}
