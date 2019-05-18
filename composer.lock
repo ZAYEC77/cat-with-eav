@@ -757,18 +757,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NullRefExcep/yii2-datatables.git",
-                "reference": "2ed48b398fb90fb61173d069379348374ad3d2fc"
+                "reference": "17b21f31328556203ee3dfd91f90328fcbc721f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NullRefExcep/yii2-datatables/zipball/2ed48b398fb90fb61173d069379348374ad3d2fc",
-                "reference": "2ed48b398fb90fb61173d069379348374ad3d2fc",
+                "url": "https://api.github.com/repos/NullRefExcep/yii2-datatables/zipball/17b21f31328556203ee3dfd91f90328fcbc721f4",
+                "reference": "17b21f31328556203ee3dfd91f90328fcbc721f4",
                 "shasum": ""
             },
             "require": {
                 "bower-asset/datatables": "~1.10.15",
                 "bower-asset/datatables-plugins": "~1.10.15",
-                "php": ">=5.4.0",
+                "php": ">=5.5.0",
                 "yiisoft/yii2": "~2.0.13"
             },
             "type": "yii2-extension",
@@ -802,7 +802,7 @@
                 "yii",
                 "yii2"
             ],
-            "time": "2019-05-18T15:04:08+00:00"
+            "time": "2019-05-18T15:54:28+00:00"
         },
         {
             "name": "nullref/yii2-eav",

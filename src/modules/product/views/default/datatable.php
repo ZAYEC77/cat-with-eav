@@ -13,11 +13,16 @@
     'id' => 'dataTable1',
     'globalVariable' => true,
     'columns' => [
-        'price',
+        [
+            'class' => \nullref\datatable\DataTableColumn::class,
+            'data' => 'price',
+            'sClass' => 'price-cell-class',
+        ],
         [
             'class' => \nullref\datatable\LinkColumn::class,
             'title' => 'Header title',
             'label' => 'Link title',
+            'sClass' => 'link-cell-class',
             'url' => 'view',
             'data' => 'price',
         ]
