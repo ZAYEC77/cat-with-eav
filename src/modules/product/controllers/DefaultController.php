@@ -2,6 +2,8 @@
 
 namespace app\modules\product\controllers;
 
+use app\modules\product\models\ProductSearch;
+use Yii;
 use yii\web\Controller;
 
 /**
@@ -17,4 +19,29 @@ class DefaultController extends Controller
     {
         return $this->render('index');
     }
+
+    public function actions()
+    {
+        return [
+            'datatables-ajax' => [
+                'class' => 'nullref\datatable\DataTableAction',
+                'query' => ProductSearch::find(),
+            ],
+        ];
+    }
+
+
+    /**
+     * @return string
+     */
+    public function actionDatatable()
+    {
+        $searchModel = new ProductSearch();
+        $dataProvider = $searchModel->search(Yii::$app->requestedParams);
+
+        return $this->render('datatable', [
+            'dataProvider' => $dataProvider,
+        ]);
+    }
+
 }

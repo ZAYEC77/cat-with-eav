@@ -18,6 +18,8 @@ use yii\db\ActiveQuery;
  *
  * @property array $categoriesList
  * @property Category[] $categories
+ *
+ * @property EntityModel $eav
  */
 class Product extends \yii\db\ActiveRecord
 {
@@ -56,9 +58,7 @@ class Product extends \yii\db\ActiveRecord
                 'class' => Entity::class,
                 'entity' => function () {
                     return new EntityModel([
-                        'sets' => [
-                            Set::findOne(['code' => 'product']),
-                        ],
+                        'sets' => Set::findAll(['code' => 'product']),
                     ]);
                 },
             ],
