@@ -17,7 +17,7 @@
         "nullref/yii2-admin": ">=0.0.2",
         "nullref/yii2-category": "dev-master",
         "nullref/yii2-core": ">=0.0.3",
-        "nullref/yii2-datatables": "dev-master",
+        "nullref/yii2-datatables": ">=1.1.0",
         "nullref/yii2-eav": "dev-master",
         "nullref/yii2-useful": ">=0.0.4",
         "vlucas/phpdotenv": "~1.0@dev",

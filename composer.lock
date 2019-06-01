@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b4df351a53f164f302e2dd149fec7724",
+    "content-hash": "fb899d043b76d1fc1a7b02fc6820e281",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -4474,7 +4474,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "nullref/yii2-category": 20,
-        "nullref/yii2-datatables": 20,
         "nullref/yii2-eav": 20,
         "vlucas/phpdotenv": 20,
         "voskobovich/yii2-linker-behavior": 20,
