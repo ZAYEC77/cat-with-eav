@@ -5,7 +5,13 @@
  *
  * @var \yii\data\ActiveDataProvider $dataProvider
  */
+use yii\web\JsExpression;
 
+$customColumnRender = <<<JS
+function render(data, type, row, meta ){
+    return "ID: " + row["id"] + ", Price: " + row["price"];
+}
+JS;
 ?>
 
 <?= \nullref\datatable\DataTable::widget([
@@ -15,6 +21,10 @@
     'columns' => [
         'id',
         'price',
+        [
+            'title' => 'Custom column',
+            'render' => new JsExpression($customColumnRender),
+        ],
     ],
 ]) ?>
 

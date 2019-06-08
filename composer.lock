@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fb899d043b76d1fc1a7b02fc6820e281",
+    "content-hash": "b4df351a53f164f302e2dd149fec7724",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -757,12 +757,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NullRefExcep/yii2-datatables.git",
-                "reference": "17b21f31328556203ee3dfd91f90328fcbc721f4"
+                "reference": "59d8beceaa86008ce475e45c1ab5f03d80889fc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NullRefExcep/yii2-datatables/zipball/17b21f31328556203ee3dfd91f90328fcbc721f4",
-                "reference": "17b21f31328556203ee3dfd91f90328fcbc721f4",
+                "url": "https://api.github.com/repos/NullRefExcep/yii2-datatables/zipball/59d8beceaa86008ce475e45c1ab5f03d80889fc6",
+                "reference": "59d8beceaa86008ce475e45c1ab5f03d80889fc6",
                 "shasum": ""
             },
             "require": {
@@ -802,7 +802,7 @@
                 "yii",
                 "yii2"
             ],
-            "time": "2019-05-18T15:54:28+00:00"
+            "time": "2019-06-08T22:18:02+00:00"
         },
         {
             "name": "nullref/yii2-eav",
@@ -4474,6 +4474,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "nullref/yii2-category": 20,
+        "nullref/yii2-datatables": 20,
         "nullref/yii2-eav": 20,
         "vlucas/phpdotenv": 20,
         "voskobovich/yii2-linker-behavior": 20,
