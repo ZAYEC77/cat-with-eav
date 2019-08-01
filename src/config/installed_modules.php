@@ -5,5 +5,8 @@ return [
     ],
     "eav" => [
         "class" => "nullref\\eav\\Module"    
+    ],
+    "geo" => [
+        "class" => "nullref\\geo\\Module"    
     ]
     ];

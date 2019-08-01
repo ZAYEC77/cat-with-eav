@@ -40,6 +40,11 @@ class Product extends \yii\db\ActiveRecord
         return new ProductQuery(get_called_class());
     }
 
+    public function getId2()
+    {
+        return $this->id * 2;
+    }
+
     /**
      * {@inheritdoc}
      */

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b4df351a53f164f302e2dd149fec7724",
+    "content-hash": "12024abe24dd0bbd9b62e77f7e0bca13",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -187,7 +187,7 @@
             "version": "v1.3.2",
             "source": {
                 "type": "git",
-                "url": "git@github.com:bestiejs/punycode.js.git",
+                "url": "https://github.com/bestiejs/punycode.js.git",
                 "reference": "38c8d3131a82567bfef18da09f7f4db68c84f8a3"
             },
             "dist": {
@@ -490,6 +490,53 @@
             "time": "2016-10-24T15:52:54+00:00"
         },
         {
+            "name": "kartik-v/dependent-dropdown",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/dependent-dropdown.git",
+                "reference": "df731d6d368cc66b2bcdd8ca435c30ee89c715a7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/dependent-dropdown/zipball/df731d6d368cc66b2bcdd8ca435c30ee89c715a7",
+                "reference": "df731d6d368cc66b2bcdd8ca435c30ee89c715a7",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "kartik\\plugins\\depdrop\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "A multi level dependent dropdown JQuery plugin that allows nested dependencies.",
+            "homepage": "https://github.com/kartik-v/dependent-dropdown",
+            "keywords": [
+                "dependent",
+                "dropdown",
+                "jquery",
+                "option",
+                "select"
+            ],
+            "time": "2019-06-19T07:40:50+00:00"
+        },
+        {
             "name": "kartik-v/yii2-krajee-base",
             "version": "dev-master",
             "source": {
@@ -539,6 +586,60 @@
                 "yii2"
             ],
             "time": "2018-04-23T04:29:46+00:00"
+        },
+        {
+            "name": "kartik-v/yii2-widget-depdrop",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-widget-depdrop.git",
+                "reference": "4dffe1fd0c9d9d5b7e6231f6cd059dfa36d22b3b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-depdrop/zipball/4dffe1fd0c9d9d5b7e6231f6cd059dfa36d22b3b",
+                "reference": "4dffe1fd0c9d9d5b7e6231f6cd059dfa36d22b3b",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/dependent-dropdown": "~1.4",
+                "kartik-v/yii2-krajee-base": ">=2.0.0"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "kartik\\depdrop\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Widget that enables setting up dependent dropdowns with nested dependencies (sub repo split from yii2-widgets)",
+            "homepage": "https://github.com/kartik-v/yii2-widget-depdrop",
+            "keywords": [
+                "dependent",
+                "dropdown",
+                "extension",
+                "form",
+                "jquery",
+                "plugin",
+                "widget",
+                "yii2"
+            ],
+            "time": "2019-05-25T07:32:15+00:00"
         },
         {
             "name": "kartik-v/yii2-widget-select2",
@@ -718,12 +819,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NullRefExcep/yii2-core.git",
-                "reference": "15f36ce22c41c07a889f5a9ea1270d8026feeedc"
+                "reference": "09cdeacf02e18b199e0c0b978083bacc8989358f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NullRefExcep/yii2-core/zipball/15f36ce22c41c07a889f5a9ea1270d8026feeedc",
-                "reference": "15f36ce22c41c07a889f5a9ea1270d8026feeedc",
+                "url": "https://api.github.com/repos/NullRefExcep/yii2-core/zipball/09cdeacf02e18b199e0c0b978083bacc8989358f",
+                "reference": "09cdeacf02e18b199e0c0b978083bacc8989358f",
                 "shasum": ""
             },
             "require": {
@@ -749,7 +850,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2018-05-24T11:24:20+00:00"
+            "time": "2018-08-31T11:09:49+00:00"
         },
         {
             "name": "nullref/yii2-datatables",
@@ -757,12 +858,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NullRefExcep/yii2-datatables.git",
-                "reference": "59d8beceaa86008ce475e45c1ab5f03d80889fc6"
+                "reference": "fbd9199bf3e0d4e366b12f52424bc6e6c7b974f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NullRefExcep/yii2-datatables/zipball/59d8beceaa86008ce475e45c1ab5f03d80889fc6",
-                "reference": "59d8beceaa86008ce475e45c1ab5f03d80889fc6",
+                "url": "https://api.github.com/repos/NullRefExcep/yii2-datatables/zipball/fbd9199bf3e0d4e366b12f52424bc6e6c7b974f0",
+                "reference": "fbd9199bf3e0d4e366b12f52424bc6e6c7b974f0",
                 "shasum": ""
             },
             "require": {
@@ -802,7 +903,7 @@
                 "yii",
                 "yii2"
             ],
-            "time": "2019-06-08T22:18:02+00:00"
+            "time": "2019-08-01T11:52:39+00:00"
         },
         {
             "name": "nullref/yii2-eav",
@@ -844,6 +945,51 @@
                 "MIT"
             ],
             "time": "2018-05-23T20:17:44+00:00"
+        },
+        {
+            "name": "nullref/yii2-geo",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/NullRefExcep/yii2-geo.git",
+                "reference": "0021557183dcec9a63aa8bda216ba16833a2d4af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/NullRefExcep/yii2-geo/zipball/0021557183dcec9a63aa8bda216ba16833a2d4af",
+                "reference": "0021557183dcec9a63aa8bda216ba16833a2d4af",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-widget-depdrop": "@dev",
+                "nullref/yii2-core": "dev-master",
+                "nullref/yii2-useful": "dev-master",
+                "php": ">=7.0.0",
+                "yiisoft/yii2": ">=2.0.4"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "nullref\\geo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yaroslav Velychko",
+                    "email": "lijkbezorger@gmail.com"
+                }
+            ],
+            "description": "GEO Module for Yii2",
+            "keywords": [
+                "extension",
+                "geo",
+                "yii2"
+            ],
+            "time": "2019-07-05T19:15:53+00:00"
         },
         {
             "name": "nullref/yii2-sb-admin-2",

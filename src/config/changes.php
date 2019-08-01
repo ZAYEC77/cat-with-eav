@@ -48,5 +48,33 @@ return [
         "meta" => [
         
     ]    
+    ],
+    [
+        "module" => "geo",
+        "action" => "install",
+        "meta" => [
+        
+    ]    
+    ],
+    [
+        "module" => "geo",
+        "action" => "install",
+        "meta" => [
+        
+    ]    
+    ],
+    [
+        "module" => "geo",
+        "action" => "install",
+        "meta" => [
+        
+    ]    
+    ],
+    [
+        "module" => "geo",
+        "action" => "install",
+        "meta" => [
+        
+    ]    
     ]
     ];
