@@ -18,16 +18,57 @@ function customRender2(data, type, row, meta) {
   return JSON.stringify(row);
 }
 JS;
+$content = [
+    'tables' => [
+        'tbl1' => [
+            'data' => $dataProvider->getModels(),
+            'columns' => [
+                'id',
+                'price'
+            ],
+        ],
+        'tbl2' => [
+            'data' => $dataProvider->getModels(),
+            'columns' => [
+                'id',
+                'price'
+            ],
+        ],
+    ],
+];
+foreach ($content['tables'] as $tableId => $table) {
+    $columns = [];
+    foreach ($table['columns'] as $key) {
+        $column = [
+            'data' => $key,
+            'title' => $key,
+        ];
+        $columns[] = $column;
+    }
 
+    echo \nullref\datatable\DataTable::widget([
+//        'data' => $table['data'],
+        'serverSide' => true,
+        'ajax' => '/product/default/datatables-ajax',
+        'columns' => $columns,
+        'globalVariable' => true,
+        'paging' => false,
+        'ordering' => false,
+        'info' => false,
+        'withColumnFilter' => true,
+        'id' => $tableId,
+    ]);
+}
 ?>
+
 
 <?= \nullref\datatable\DataTable::widget([
     'data' => $dataProvider->getModels(),
     'id' => 'dataTable1',
     'globalVariable' => true,
     'serverSide' => true,
-    'extraColumns' => ['id2'],
     'ajax' => '/product/default/datatables-ajax',
+    'extraColumns' => ['id2'],
     'columns' => [
         'id',
         'price',
