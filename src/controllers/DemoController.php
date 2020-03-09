@@ -38,6 +38,11 @@ class DemoController extends Controller implements IAdminController
                 'query' => DemoSearch::find(),
                 'extraColumns' => ['fileNameWithUrl'],
             ],
+            'datatables-custom-ajax' => [
+                'class' => 'nullref\datatable\DataTableAction',
+                'query' => (new DemoSearch())->search(Yii::$app->request->queryParams)->query,
+                'extraColumns' => ['fileNameWithUrl'],
+            ],
         ];
     }
 
@@ -68,6 +73,24 @@ class DemoController extends Controller implements IAdminController
         return $this->render('dt', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
+        ]);
+    }
+
+
+    /**
+     * Lists all Demo models.
+     * @return mixed
+     */
+    public function actionAjaxFiltering()
+    {
+        $searchModel = new DemoSearch();
+        $queryParams = Yii::$app->request->queryParams;
+        $dataProvider = $searchModel->search($queryParams);
+
+        return $this->render('ajax-filtering', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+            'queryParams' => $queryParams,
         ]);
     }
 
